@@ -45,3 +45,43 @@ namespace KargoTakip
             MessageBox.Show("PERSONEL KAYIT  Başarılı !");
 
         }
+        
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (textBox6.Text.Contains("@") && textBox6.Text.Contains(".com"))
+            {
+
+                if (textBox6.Text == textBox7.Text && textBox11.Text == textBox12.Text)
+                {
+                    kaydet();
+                }
+                else
+                {
+                    MessageBox.Show("lütfen şifre ve mail tekrarı alanlarını birbiriyle eşit yapınız");
+                }
+            }
+            else {
+                MessageBox.Show("lütfen mail adresini doğru giriniz");
+            }
+
+
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
+            {
+                textBox11.PasswordChar = '\0'; textBox12.PasswordChar = '\0';
+            }
+            else
+            {
+                textBox11.PasswordChar = '*'; textBox12.PasswordChar = '*';
+            }
+
+        }
