@@ -18,6 +18,7 @@ namespace KargoTakip
             InitializeComponent();
         }
         int kontrol = 0;
+        
        public static string girismail;
         string girisifre;
         private static void button3_ClickExtracted()
