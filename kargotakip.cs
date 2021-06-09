@@ -85,4 +85,40 @@ namespace KargoTakip
                 textBox11.PasswordChar = '*'; textBox12.PasswordChar = '*';
             }
 
+
+        }
+  private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            panel4.Hide();
+            panel3.Hide();
+            panel2.Visible = true;
+            panel1.Visible = false;
+
+            try
+            {
+
+                OleDbConnection con;
+                con = new OleDbConnection("Provider=Microsoft.ACE.Oledb.12.0;Data Source=kargotakip.accdb");
+                con.Open();
+                DataTable dt = new DataTable();
+                OleDbDataAdapter ad = new OleDbDataAdapter("SELECT * FROM gonderi_takip WHERE takip_no ='" + textBox1.Text + "'", con);
+                ad.Fill(dt);
+                dataGridView1.DataSource = dt;
+                dataGridView1.Columns[0].Visible = false;
+                con.Close();
+
+
+            }
+            catch (Exception)
+            {
+
+                kontrol += 1;
+                if (kontrol == 4)
+                {
+                    Application.Exit();
+                }
+                MessageBox.Show(" Kod Yanlış ! /n 3 kere yanlış kod girerseniz güvenlik sebebiyle program sonlandırılacaktır ");
+            }
+
+
         }
