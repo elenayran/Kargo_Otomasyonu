@@ -125,4 +125,64 @@ namespace KargoTakip
             } 
                         
         }
-        
+ private void musteri_Load(object sender, EventArgs e)
+        {
+            musteribilgileri();
+            doldur();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void çıkışToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void şifreDeğiştirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           string YeniSifre = Interaction.InputBox("Lütfen Yeni Şifre oluşturunuz", "Yeni Şifre Girişi", "123");
+           string KontrolSifre = Interaction.InputBox("Lütfen Güvenlik Sebebiyle Yeni Şifrenizi Tekrar Giriniz", "Yeni Şifre Girişi", "123");
+            if (YeniSifre==KontrolSifre&& YeniSifre!="123" &&YeniSifre!="")
+            {
+
+                string baglantiyolu = "provider=microsoft.ace.oledb.12.0;data source=" + Application.StartupPath + "\\kargotakip.accdb";
+                OleDbConnection baglanti = new OleDbConnection(baglantiyolu);
+                baglanti.Open();
+
+                OleDbCommand kaydet = new OleDbCommand("update uyeler set sifre='" + YeniSifre  + "' where mail='" + Form1.girismail + "'", baglanti);
+                
+                kaydet.ExecuteNonQuery();
+                baglanti.Close();
+                MessageBox.Show("Şifre Değiştirme Başarılı !");
+                
+
+            }
+            else if (YeniSifre=="123")
+            {
+                MessageBox.Show("123 dışında bir şifre giriniz !");
+
+            }
+            else
+            {
+                MessageBox.Show("Şifre değiştirme başarısız !");
+            }
+        }
+
+        private void bilgilerimiGüncelleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            textBox2.Enabled = true;
+            textBox3.Enabled = true;
+            textBox4.Enabled = true;
+         Güncelle.Visible=true;
+
+           
+
+
+
+
+
+
+        }       
