@@ -121,4 +121,103 @@ namespace KargoTakip
             }
 
 
-}   }   }
+        } 
+        
+     
+
+      
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panel3.Show();
+            panel1.Hide();
+            panel2.Hide();
+            panel4.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panel3.Show();
+            panel1.Hide();
+            panel2.Hide();
+            panel4.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form1 frm1 = new Form1();
+          
+           
+       string kontrolmail = textBox2.Text;
+            string kontrolsifre = textBox3.Text;
+            OleDbConnection con;
+            con = new OleDbConnection("Provider=Microsoft.ACE.Oledb.12.0;Data Source=kargotakip.accdb");
+            con.Open();
+            OleDbCommand okuma = new OleDbCommand();
+            okuma.Connection = con;
+            okuma.CommandText = "SELECT * FROM uyeler WHERE mail= '" + textBox2.Text + "'";
+            OleDbDataReader reader = okuma.ExecuteReader();
+            while (reader.Read())
+            {
+                girismail = reader["mail"].ToString();
+                girisifre = reader["sifre"].ToString();
+                
+            }
+            con.Close();
+         //   MessageBox.Show(girismail,girisifre);
+            if (girismail ==kontrolmail&& girisifre==kontrolsifre)
+            {
+                this.Hide();
+                musteri mstr = new musteri();
+                mstr.Show();
+            }
+            else
+            {
+                label18.Text ="lütfen üye olunuz";
+            }
+            
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+            Form1 frm1 = new Form1();
+
+
+            string kontrolname = textBox5.Text;
+            string kontrolsifre = textBox4.Text;
+         
+            OleDbConnection con;
+            con = new OleDbConnection("Provider=Microsoft.ACE.Oledb.12.0;Data Source=kargotakip.accdb");
+            con.Open();
+            OleDbCommand okuma = new OleDbCommand();
+            okuma.Connection = con;
+            okuma.CommandText = "SELECT * FROM admin WHERE username= '" + textBox5.Text + "'";
+            OleDbDataReader reader = okuma.ExecuteReader();
+            while (reader.Read())
+            {
+                girismail = reader["username"].ToString();
+                girisifre = reader["password"].ToString();
+
+            }
+            con.Close();
+           
+            if (girismail == kontrolname && girisifre == kontrolsifre)
+            {
+                this.Hide();
+                admin adm = new admin();
+                adm.Show();
+            }
+            else
+            {
+                label18.Text = "lütfen üye olunuz";
+            }
+        }
+    }
+}
+
+ 
