@@ -182,7 +182,65 @@ namespace KargoTakip
 
 
 
-
-
-
         }       
+        
+      
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string baglantiyolu = "provider=microsoft.ace.oledb.12.0;data source=" + Application.StartupPath + "\\kargotakip.accdb";
+            OleDbConnection baglanti = new OleDbConnection(baglantiyolu);
+            baglanti.Open();
+            string eklemekomutu = "insert into destek (konu,mesaj,gonderen_mail) values ('" + textBox5.Text + "','" + richTextBox2.Text + "','" + Form1.girismail + "')";
+            OleDbCommand komut = new OleDbCommand(eklemekomutu, baglanti);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Destek talebiniz Gönderildi ! 24 Saat içerisinde mailinize Cevap gelicektir.");
+            groupBox3.Visible = false;
+        }
+
+        private void çıkışToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            groupBox3.Visible = true;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            DialogResult tus;
+            tus = colorDialog1.ShowDialog();
+            if (tus == DialogResult.OK)
+            {
+                this.BackColor = colorDialog1.Color;
+            }
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+         
+
+
+
+            
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+    
+}
