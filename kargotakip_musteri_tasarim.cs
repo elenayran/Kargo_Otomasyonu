@@ -216,3 +216,59 @@ namespace KargoTakip
             this.label5.Size = new System.Drawing.Size(108, 19);
             this.label5.TabIndex = 0;
             this.label5.Text = "Kargo Takip No";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menüToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(811, 24);
+            this.menuStrip1.TabIndex = 3;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // menüToolStripMenuItem
+            // 
+            this.menüToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.şifreDeğiştirToolStripMenuItem,
+            this.bilgilerimiGüncelleToolStripMenuItem,
+            this.çıkışToolStripMenuItem,
+            this.çıkışToolStripMenuItem1});
+            this.menüToolStripMenuItem.Name = "menüToolStripMenuItem";
+            this.menüToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.menüToolStripMenuItem.Text = "Menü";
+            // 
+            // şifreDeğiştirToolStripMenuItem
+            // 
+            this.şifreDeğiştirToolStripMenuItem.Name = "şifreDeğiştirToolStripMenuItem";
+            this.şifreDeğiştirToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.şifreDeğiştirToolStripMenuItem.Text = "Şifre Değiştir";
+            this.şifreDeğiştirToolStripMenuItem.Click += new System.EventHandler(this.şifreDeğiştirToolStripMenuItem_Click);
+            // 
+            // bilgilerimiGüncelleToolStripMenuItem
+            // 
+            this.bilgilerimiGüncelleToolStripMenuItem.Name = "bilgilerimiGüncelleToolStripMenuItem";
+            this.bilgilerimiGüncelleToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.bilgilerimiGüncelleToolStripMenuItem.Text = "Bilgilerimi güncelle";
+            this.bilgilerimiGüncelleToolStripMenuItem.Click += new System.EventHandler(this.bilgilerimiGüncelleToolStripMenuItem_Click);
+            // 
+            // çıkışToolStripMenuItem
+            // 
+            this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
+            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.çıkışToolStripMenuItem.Text = "Destek Mesajı";
+            this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
+            // 
+            // çıkışToolStripMenuItem1
+            // 
+            this.çıkışToolStripMenuItem1.Name = "çıkışToolStripMenuItem1";
+            this.çıkışToolStripMenuItem1.Size = new System.Drawing.Size(175, 22);
+            this.çıkışToolStripMenuItem1.Text = "Çıkış";
+            this.çıkışToolStripMenuItem1.Click += new System.EventHandler(this.çıkışToolStripMenuItem1_Click);
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menüToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.şifreDeğiştirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bilgilerimiGüncelleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.çıkışToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
