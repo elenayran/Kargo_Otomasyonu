@@ -37,6 +37,22 @@ namespace KargoTakip
             this.label6 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
+           
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menüToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.şifreDeğiştirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bilgilerimiGüncelleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.çıkışToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+             this.gbx3 = new System.Windows.Forms.GroupBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.Güncelle = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             // 
             // groupBox1
             // 
@@ -266,9 +282,94 @@ namespace KargoTakip
             this.çıkışToolStripMenuItem1.Size = new System.Drawing.Size(175, 22);
             this.çıkışToolStripMenuItem1.Text = "Çıkış";
             this.çıkışToolStripMenuItem1.Click += new System.EventHandler(this.çıkışToolStripMenuItem1_Click);
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.menüToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.şifreDeğiştirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bilgilerimiGüncelleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.çıkışToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            // 
+            // gbx3
+            // 
+            this.gbx3.BackColor = System.Drawing.Color.Transparent;
+            this.gbx3.Controls.Add(this.pictureBox3);
+            this.gbx3.Controls.Add(this.Güncelle);
+            this.gbx3.Controls.Add(this.textBox4);
+            this.gbx3.Controls.Add(this.textBox3);
+            this.gbx3.Controls.Add(this.textBox2);
+            this.gbx3.Controls.Add(this.label10);
+            this.gbx3.Controls.Add(this.label9);
+            this.gbx3.Controls.Add(this.label8);
+            this.gbx3.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.gbx3.Location = new System.Drawing.Point(570, 32);
+            this.gbx3.Name = "gbx3";
+            this.gbx3.Size = new System.Drawing.Size(233, 330);
+            this.gbx3.TabIndex = 5;
+            this.gbx3.TabStop = false;
+            this.gbx3.Text = "Bilgileriniz";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::KargoTakip.Properties.Resources.user;
+            this.pictureBox3.Location = new System.Drawing.Point(7, 181);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(117, 132);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
+            // 
+            // Güncelle
+            // 
+            this.Güncelle.Location = new System.Drawing.Point(146, 181);
+            this.Güncelle.Name = "Güncelle";
+            this.Güncelle.Size = new System.Drawing.Size(87, 27);
+            this.Güncelle.TabIndex = 6;
+            this.Güncelle.Text = "Güncelle";
+            this.Güncelle.UseVisualStyleBackColor = true;
+            this.Güncelle.Visible = false;
+            this.Güncelle.Click += new System.EventHandler(this.Güncelle_Click);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Enabled = false;
+            this.textBox4.Location = new System.Drawing.Point(110, 118);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(116, 26);
+            this.textBox4.TabIndex = 5;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Enabled = false;
+            this.textBox3.Location = new System.Drawing.Point(110, 84);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(116, 26);
+            this.textBox3.TabIndex = 4;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Enabled = false;
+            this.textBox2.Location = new System.Drawing.Point(110, 42);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(116, 26);
+            this.textBox2.TabIndex = 3;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(22, 129);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(72, 18);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Doğum Yılı";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(19, 88);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(45, 18);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Tc No";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(19, 45);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(67, 18);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Ad Soyad";
