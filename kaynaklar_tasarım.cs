@@ -177,4 +177,4 @@ namespace KargoTakip.Properties {
                 object obj = ResourceManager.GetObject("no-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
-        }
+          }    }}  

@@ -97,5 +97,5 @@ namespace KargoTakip.Properties
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-    }
-} 
+    
+ 
