@@ -837,7 +837,113 @@ namespace KargoTakip
             this.button2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-
+            // 
+            // panel5
+            // 
+            this.panel1.Controls.Add(this.groupBox3);
+            this.panel1.Location = new System.Drawing.Point(27, 315);
+            this.panel1.Name = "panel4";
+            this.panel1.Size = new System.Drawing.Size(690, 215);
+            this.panel1.TabIndex = 4;
+             // 
+            // groupBox3
+            // 
+            this.groupBox4.Controls.Add(this.label23);
+            this.groupBox4.Controls.Add(this.comboBox2);
+            this.groupBox4.Controls.Add(this.comboBox3);
+            this.groupBox4.Controls.Add(this.textBox1);
+            
+            this.groupBox3.Controls.Add(this.pictureBox1);
+            this.groupBox3.Font = new System.Drawing.Font("Comic Sans MS", 8.25F);
+            this.groupBox3.ForeColor = System.Drawing.Color.Black;
+            this.groupBox3.Location = new System.Drawing.Point(349, 16);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(256, 135);
+            this.groupBox3.TabIndex = 0;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "ÖDEME";
+           
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.25F);
+            this.label2.Location = new System.Drawing.Point(4, 88);
+            this.label2.Name = "label23";
+            this.label2.Size = new System.Drawing.Size(104, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "TOPLAM TUTAR"; 
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+           
+            "ÜCRET ALICIDAN TAHSİL"});
+            this.comboBox1.Location = new System.Drawing.Point(113, 43);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(103, 26);
+            this.comboBox1.TabIndex = 1;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "KREDİ KARTI İLE",
+            "NAKİT"});
+            this.comboBox1.Location = new System.Drawing.Point(113, 43);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(103, 26);
+            this.comboBox1.TabIndex = 1;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            
+            
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.ForeColor = System.Drawing.Color.Blue;
+            this.button1.Image = global::KargoTakip.Properties.Resources.zaman;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.Location = new System.Drawing.Point(20, 28);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(99, 84);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "ÖNCEKİ";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.ForeColor = System.Drawing.Color.Blue;
+            this.button2.Image = global::KargoTakip.Properties.Resources.many1;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button2.Location = new System.Drawing.Point(139, 28);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(98, 84);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "SONRAKİ";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+             // 
+            // button3
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.ForeColor = System.Drawing.Color.Blue;
+            this.button2.Image = global::KargoTakip.Properties.Resources.many1;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button2.Location = new System.Drawing.Point(139, 28);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(98, 84);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "İPTAL";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
         }
     }
 }
